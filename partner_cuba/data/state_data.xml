@@ -1,0 +1,171 @@
+<odoo>
+    <!-- Provincias -->
+    <record id="state_cu_pnr" model="res.country.state">
+        <field name="name">Pinar del Río</field>
+        <field name="code">PNR</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_art" model="res.country.state">
+        <field name="name">Artemisa</field>
+        <field name="code">ART</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_lha" model="res.country.state">
+        <field name="name">La Habana</field>
+        <field name="code">HAB</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_may" model="res.country.state">
+        <field name="name">Mayabeque</field>
+        <field name="code">MYB</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_mtz" model="res.country.state">
+        <field name="name">Matanzas</field>
+        <field name="code">MTZ</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_vcl" model="res.country.state">
+        <field name="name">Villa Clara</field>
+        <field name="code">VCL</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_cfg" model="res.country.state">
+        <field name="name">Cienfuegos</field>
+        <field name="code">CFG</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_ssc" model="res.country.state">
+        <field name="name">Sancti Spíritus</field>
+        <field name="code">SSP</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_cav" model="res.country.state">
+        <field name="name">Ciego de Avila</field>
+        <field name="code">CAV</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_cam" model="res.country.state">
+        <field name="name">Camagüey</field>
+        <field name="code">CMG</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_ltu" model="res.country.state">
+        <field name="name">Las Tunas</field>
+        <field name="code">LTU</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_hol" model="res.country.state">
+        <field name="name">Holguín</field>
+        <field name="code">HOL</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_grm" model="res.country.state">
+        <field name="name">Granma</field>
+        <field name="code">GRM</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_stg" model="res.country.state">
+        <field name="name">Santiago de Cuba</field>
+        <field name="code">STG</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+    <record id="state_cu_gtm" model="res.country.state">
+        <field name="name">Guantánamo</field>
+        <field name="code">GTM</field>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+
+    <!-- Municipios -->
+    <!-- Pinar del Rio -->
+    <record id="mun_pnr_consolacion" model="res.country.state.city">
+        <field name="name">Consolación del Sur</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_guane" model="res.country.state.city">
+        <field name="name">Guane</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_la_palma" model="res.country.state.city">
+        <field name="name">La Palma</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_los_palacios" model="res.country.state.city">
+        <field name="name">Los Palacios</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_mantua" model="res.country.state.city">
+        <field name="name">Mantua</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_minas" model="res.country.state.city">
+        <field name="name">Minas de Matahambre</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_pinar" model="res.country.state.city">
+        <field name="name">Pinar del Río</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_sanjuan" model="res.country.state.city">
+        <field name="name">San Juan Martínez</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_sanluis" model="res.country.state.city">
+        <field name="name">San Luis</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_sandino" model="res.country.state.city">
+        <field name="name">Sandino</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+    <record id="mun_pnr_vinales" model="res.country.state.city">
+        <field name="name">Viñales</field>
+        <field name="state_id" ref="partner_cuba.state_cu_pnr"/>
+    </record>
+
+    <!-- Artemisa -->
+    <record id="mun_art_alquizar" model="res.country.state.city">
+        <field name="name">Alquizar</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_artemisa" model="res.country.state.city">
+        <field name="name">Artemisa</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_bahia" model="res.country.state.city">
+        <field name="name">Bahía Honda</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_bauta" model="res.country.state.city">
+        <field name="name">Bauta</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_Caimito" model="res.country.state.city">
+        <field name="name">Caimito</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_candelaria" model="res.country.state.city">
+        <field name="name">Candelaria</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_guanajay" model="res.country.state.city">
+        <field name="name">Guanajay</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_guira" model="res.country.state.city">
+        <field name="name">Güira de Melena</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_mariel" model="res.country.state.city">
+        <field name="name">Mariel</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_sanantonio" model="res.country.state.city">
+        <field name="name">San Antonio de los Baños</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+    <record id="mun_art_sancristobal" model="res.country.state.city">
+        <field name="name">San Cristobal</field>
+        <field name="state_id" ref="partner_cuba.state_cu_art"/>
+    </record>
+</odoo>

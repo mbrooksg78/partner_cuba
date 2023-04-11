@@ -1,0 +1,32 @@
+<odoo>
+  <record id="view_partner_form_inherited_partner_cuba" model="ir.ui.view">
+    <field name="name">view.partner.form.extended</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <field name="city" position="replace">
+        <field name="city" placeholder="City" class="o_address_city" attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)], 'invisible': [('country_id', '=', %(base.cu)d)]}"/>
+        <field name="city_id" placeholder="City" class="o_address_city" attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)],'invisible': [('country_id', '!=', %(base.cu)d)]}" widget="selection"/>
+      </field>
+    </field>
+  </record>
+
+  <record id="country_state_city_view_tree" model="ir.ui.view">
+    <field name="name">country.state.city.view.tree</field>
+    <field name="model">res.country.state.city</field>
+    <field name="arch" type="xml">
+      <tree editable="bottom">
+        <field name="name"/>
+        <field name="state_id"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="city_action" model="ir.actions.act_window">
+    <field name="name">Municipios</field>
+    <field name="res_model">res.country.state.city</field>
+    <field name="view_mode">tree</field>
+  </record>
+
+  <menuitem id="city_menu" name="Ciudad" parent="contacts.menu_localisation" action="city_action"/>
+</odoo>

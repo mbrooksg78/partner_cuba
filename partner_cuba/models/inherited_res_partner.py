@@ -10,14 +10,14 @@ class ResPartner(models.Model):
     
     @api.onchange('country_id')
     def onchange_country(self):
-        print("ONCH: {} {}".format(self.country_id, self.env.ref('base.cu').id))
         cuba_id = self.env.ref('base.cu')
         if self.country_id == cuba_id:
             return {
                 'domain': {
-                    'state_id': [('country_id', '=', self.env.ref('base.cu'))]
+                    'state_id': [('country_id', '=', cuba_id.id)]
                 }
             }
+        return {}
             
     @api.onchange('state_id')
     def onchange_city(self):
